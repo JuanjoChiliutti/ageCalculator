@@ -88,17 +88,17 @@ function App() {
           <div className='superior'>
             <div className='inputfecha'>
               {errors.day ? <h6 style={{color: 'red'}}> DAY </h6> : <h6>DAY</h6>}
-              <input className={errors.day ? 'inputError' : ''} inputMode='number' type="number" name='day' value={values.day} onChange={handleChange} />
+              <input className={errors.day ? 'inputError' : ''} inputMode='number' type="number" name='day' placeholder='DD' value={values.day} onChange={handleChange} />
               {errors.day && <p style={{ color: 'red', fontSize: 'xx-small'}}>{errors.day}</p>}
             </div>
             <div className='inputfecha'>
             {errors.month ? <h6 style={{color: 'red'}}> MONTH </h6> : <h6>MONTH</h6>}
-              <input className={errors.month ? 'inputError' : ''} inputMode='number' type="number" name="month" id="" value={values.month} onChange={handleChange} />
+              <input className={errors.month ? 'inputError' : ''} inputMode='number' type="number" name="month" id="" placeholder='MM' value={values.month} onChange={handleChange} />
               {errors.month && <p style={{ color: 'red', fontSize: 'xx-small'}}>{errors.month}</p>}
             </div>
             <div className='inputfecha'>
             {errors.year ? <h6 style={{color: 'red'}}> YEAR </h6> : <h6>YEAR</h6>}
-              <input className={errors.year ? 'inputError' : ''} inputMode='number' type="number" name="year" id="" value= {values.year} onChange={handleChange}/>
+              <input className={errors.year ? 'inputError' : ''} inputMode='number' type="number" name="year" id="" placeholder='YYYY' value= {values.year} onChange={handleChange}/>
               
           {errors.year && <p style={{ color: 'red', fontSize: 'xx-small'}}>{errors.year}</p>}
             </div>
