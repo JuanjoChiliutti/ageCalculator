@@ -1,0 +1,136 @@
+@font-face {
+   font-family: 'PoppinsBold';
+  src: url('./assets/fonts/Poppins-Bold.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'PoppinsRegular';
+ src: url('./assets/fonts/Poppins-Regular.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'PoppinsExtraBold';
+ src: url('./assets/fonts/Poppins-ExtraBold.ttf') format('truetype'); 
+}
+@font-face {
+  font-family: 'PoppinsExtraBoldItalic';
+ src: url('./assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype'); 
+}
+body {
+  font-family: 'PoppinsRegular';
+}
+
+.contenedor-principal {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(223, 226, 226);
+}
+
+.contenedor-secundario{
+  padding: 3%;
+  width: 30em;
+  height: 20em;
+  border-radius: 5% 5% 20% 5%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+
+.superior {
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10%;
+}
+
+hr {
+  border: 1px solid rgb(207, 207, 207); 
+  flex-grow: 1;
+  color:rgb(185, 190, 185)
+}
+.inputfecha {
+  height: 100%;
+  margin: 0;
+}
+
+input {
+  margin: 0;
+  width: 60%;
+  height: 80%;
+  border: 1px solid rgb(207, 207, 207);
+  border-radius: 10%;
+  color:rgb(36, 37, 36);
+  font-size:large;
+  font-weight: 700;
+  padding-inline: 5%;
+  outline: none;
+  font-family: 'PoppinsBold';
+  
+}
+input:focus {
+  border-color: #5e69cf;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+.medio {
+  display: flex;
+  height: 20%;
+
+  align-items: center;
+}
+.inputError {
+    border-color: red; 
+    
+}
+
+.inputError:focus {
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(241, 8, 8, 0.25);
+}
+h6 {
+  margin:0;
+  color: rgb(89, 90, 89);
+}
+h1 {
+  font-family: 'PoppinsExtraBoldItalic';
+  margin:0;
+  font-weight: 900;
+   
+}
+span {
+  color:rgb(126, 56, 218)
+}
+
+.principal {
+  margin:0;
+}
+.btn {
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+  background-color: rgb(126, 56, 218);
+  color: rgb(241, 241, 241)
+}
+
+.btn:hover {
+  background-color: rgb(12,12, 12);
+  transition: 1s;
+}
+/* Estilos para pantallas más pequeñas, como dispositivos móviles */
+@media (max-width: 767px) {
+  .medio {
+    
+    justify-content: center;
+  }
+  .btn {
+    width: 3em;
+    height: 3em;
+    
+  }
+  
+
+  /* Otros estilos específicos para dispositivos móviles */
+}
