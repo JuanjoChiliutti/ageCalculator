@@ -112,7 +112,10 @@ span {
   height: 4em;
   border-radius: 50%;
   background-color: rgb(126, 56, 218);
-  color: rgb(241, 241, 241)
+  color: rgb(241, 241, 241);
+  background-image: url('./assets/images/icon-arrow.svg');
+  background-size: cover;
+  background-position: center;
 }
 
 .btn:hover {

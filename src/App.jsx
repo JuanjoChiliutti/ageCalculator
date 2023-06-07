@@ -2,6 +2,7 @@
 import './App.css'
 import {useState} from 'react'
 
+
 function App() {
   
   const [values, setValues] = useState({
@@ -104,7 +105,7 @@ function App() {
             </div>
           </div>
           <div className='medio'>
-            <hr /><button className='btn' onClick={handleClick}>Y</button>
+            <hr /><button className='btn' onClick={handleClick}></button>
           </div>
           <div className='principal'>
     
